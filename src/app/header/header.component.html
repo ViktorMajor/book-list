@@ -1,0 +1,13 @@
+<div class="header">
+  <p>Válassz rendezési szempontot</p>
+  <select class="select-dropdown" (change)="onSortChange($event)">
+    <option value="1">Szerző szerint A-Z</option>
+      <option value="2">Cím szerint A-Z</option>
+      <option value="3">Kiadási év szerint növekvő</option>
+      <option value="4">Kiadási év szerint csökkenő</option>
+      <option value="5">Ár szerint növekvő</option>
+      <option value="6">Ár szerint csökkenő</option>
+      <option value="7">Értékelés szerint növekvő</option>
+      <option value="8">Értékelés szerint csökkenő</option>
+  </select>
+</div>

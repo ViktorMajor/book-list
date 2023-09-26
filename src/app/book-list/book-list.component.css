@@ -1,0 +1,41 @@
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; 
+  justify-content: center;
+  padding: 5px;
+  background-color: #f4f4f4;
+}
+
+.book {
+  width: 900px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.book:hover {
+  transform: translateX(-80px); 
+}
+
+.book h2, .book h3 {
+  color: darkslategray;
+}
+
+.book h2, .book h3, .book h4 {
+  margin: 5px 0;
+}
+
+.book h4:nth-child(4) {
+  color: #228B22; 
+}
+
+.book h4:nth-child(5) {
+  color: #FF4500; 
+}
