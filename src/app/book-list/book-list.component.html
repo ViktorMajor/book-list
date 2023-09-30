@@ -1,9 +1,13 @@
-<div class="book-container">
-  <div *ngFor="let book of books" class="book">
-    <h2>Szerző: {{ book.author }}</h2>
-    <h3>Cím: {{ book.title }}</h3>
-    <h3>Kiadás éve: {{ book.year }}</h3>
-    <h4>Ár: {{ book.cost }} HUF</h4>
-    <h4>Értékelés: {{ book.rating }}</h4>
-  </div>
+<div
+    class="book-container"
+    *ngIf="books$ | async as books">
+    <div
+        *ngFor="let book of books"
+        class="book">
+        <h2>Szerző: {{ book.author }}</h2>
+        <h3>Cím: {{ book.title }}</h3>
+        <h3>Kiadás éve: {{ book.year }}</h3>
+        <h4>Ár: {{ book.cost }} HUF</h4>
+        <h4>Értékelés: {{ book.rating }}</h4>
+    </div>
 </div>
